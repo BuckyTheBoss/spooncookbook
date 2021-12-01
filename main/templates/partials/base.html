@@ -1,0 +1,27 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookbook - {% block title %}{% endblock %}</title>
+
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+{% include 'partials/navbar.html' %}
+
+<div class="container my-4" id="content-container">
+{% block content %}
+hjbsgbjhdvbjkvsjkbergyi
+{% endblock %}
+</div>
+
+{% block js %}
+
+{% endblock %}
+</body>
+</html>
